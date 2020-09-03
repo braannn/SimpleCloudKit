@@ -15,52 +15,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nzk-of-ybI">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nzk-of-ybI">
                                 <rect key="frame" x="20" y="44" width="374" height="44"/>
-                                <subviews>
-                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kUw-fb-foN">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="8EA-70-u0H"/>
-                                            <constraint firstAttribute="width" constant="374" id="BKd-k8-U4R"/>
-                                        </constraints>
-                                        <items>
-                                            <navigationItem title="Daily Reflection" leftItemsSupplementBackButton="YES" id="QVe-Bf-1Cc">
-                                                <barButtonItem key="rightBarButtonItem" systemItem="add" id="0a3-2w-5fU">
-                                                    <connections>
-                                                        <action selector="addTapped:" destination="BYZ-38-t0r" id="EVW-a3-qts"/>
-                                                    </connections>
-                                                </barButtonItem>
-                                            </navigationItem>
-                                        </items>
-                                    </navigationBar>
-                                </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sff-Ky-QlF">
-                                <rect key="frame" x="20" y="96" width="374" height="800"/>
+                                <rect key="frame" x="0.0" y="96" width="414" height="800"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="800" id="Oue-Nz-cxI"/>
-                                    <constraint firstAttribute="width" constant="374" id="VPV-Ex-zan"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="800" id="byY-sD-Xfq"/>
+                                    <constraint firstAttribute="width" constant="414" id="mkn-Zr-8q7"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="1C0-JV-3ID">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1C0-JV-3ID" id="Wpe-pb-N8v">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kUw-fb-foN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ICN-su-VRH"/>
+                                    <constraint firstAttribute="width" constant="414" id="RjW-wR-4uu"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Daily Reflection" leftItemsSupplementBackButton="YES" id="QVe-Bf-1Cc">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="0a3-2w-5fU">
+                                            <connections>
+                                                <action selector="addTapped:" destination="BYZ-38-t0r" id="EVW-a3-qts"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="kUw-fb-foN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="011-ks-6Zc"/>
                             <constraint firstItem="Nzk-of-ybI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-382" id="8fG-2v-r9v"/>
+                            <constraint firstItem="kUw-fb-foN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HcG-Vj-apI"/>
+                            <constraint firstItem="sff-Ky-QlF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MaD-j9-M6k"/>
+                            <constraint firstItem="kUw-fb-foN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-382" id="Nu8-rZ-p9d"/>
+                            <constraint firstItem="kUw-fb-foN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-382" id="OPt-6a-H00"/>
                             <constraint firstItem="sff-Ky-QlF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="48" id="alq-3l-hrX"/>
+                            <constraint firstItem="kUw-fb-foN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="beP-45-ke6"/>
                             <constraint firstItem="sff-Ky-QlF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cw9-Xh-l2V"/>
+                            <constraint firstItem="kUw-fb-foN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="elP-lw-4KB"/>
                             <constraint firstItem="Nzk-of-ybI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jwn-DJ-ByC"/>
+                            <constraint firstItem="sff-Ky-QlF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="48" id="oSK-gq-ncS"/>
+                            <constraint firstItem="kUw-fb-foN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s6Q-uu-mrM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
