@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		91410BB325011691003566A5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91ADDB3524FFDF98008CA39F /* CloudKit.framework */; };
+		91815B5C250174EF00DEFF2E /* Reflection+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91815B5A250174EF00DEFF2E /* Reflection+CoreDataClass.swift */; };
+		91815B5D250174EF00DEFF2E /* Reflection+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91815B5B250174EF00DEFF2E /* Reflection+CoreDataProperties.swift */; };
+		91815B5F25017CDB00DEFF2E /* SelfSizingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91815B5E25017CDB00DEFF2E /* SelfSizingTableViewCell.swift */; };
 		91ADDB1D24FFDF2B008CA39F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ADDB1C24FFDF2B008CA39F /* AppDelegate.swift */; };
 		91ADDB1F24FFDF2B008CA39F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ADDB1E24FFDF2B008CA39F /* SceneDelegate.swift */; };
 		91ADDB2124FFDF2B008CA39F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ADDB2024FFDF2B008CA39F /* ViewController.swift */; };
@@ -15,11 +18,12 @@
 		91ADDB2724FFDF2B008CA39F /* SimpleCloudKit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91ADDB2524FFDF2B008CA39F /* SimpleCloudKit.xcdatamodeld */; };
 		91ADDB2924FFDF2E008CA39F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91ADDB2824FFDF2E008CA39F /* Assets.xcassets */; };
 		91ADDB2C24FFDF2E008CA39F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91ADDB2A24FFDF2E008CA39F /* LaunchScreen.storyboard */; };
-		91ADDB392500B02E008CA39F /* Reflection+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ADDB372500B02E008CA39F /* Reflection+CoreDataClass.swift */; };
-		91ADDB3A2500B02E008CA39F /* Reflection+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ADDB382500B02E008CA39F /* Reflection+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		91815B5A250174EF00DEFF2E /* Reflection+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reflection+CoreDataClass.swift"; sourceTree = "<group>"; };
+		91815B5B250174EF00DEFF2E /* Reflection+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reflection+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		91815B5E25017CDB00DEFF2E /* SelfSizingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingTableViewCell.swift; sourceTree = "<group>"; };
 		91ADDB1924FFDF2B008CA39F /* SimpleCloudKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCloudKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91ADDB1C24FFDF2B008CA39F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91ADDB1E24FFDF2B008CA39F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,8 +35,6 @@
 		91ADDB2D24FFDF2E008CA39F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91ADDB3324FFDF90008CA39F /* SimpleCloudKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleCloudKit.entitlements; sourceTree = "<group>"; };
 		91ADDB3524FFDF98008CA39F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
-		91ADDB372500B02E008CA39F /* Reflection+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reflection+CoreDataClass.swift"; sourceTree = "<group>"; };
-		91ADDB382500B02E008CA39F /* Reflection+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reflection+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				91ADDB2A24FFDF2E008CA39F /* LaunchScreen.storyboard */,
 				91ADDB2D24FFDF2E008CA39F /* Info.plist */,
 				91ADDB2524FFDF2B008CA39F /* SimpleCloudKit.xcdatamodeld */,
+				91815B5E25017CDB00DEFF2E /* SelfSizingTableViewCell.swift */,
 			);
 			path = SimpleCloudKit;
 			sourceTree = "<group>";
@@ -92,8 +95,8 @@
 		91ADDB3B2500B041008CA39F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				91ADDB372500B02E008CA39F /* Reflection+CoreDataClass.swift */,
-				91ADDB382500B02E008CA39F /* Reflection+CoreDataProperties.swift */,
+				91815B5A250174EF00DEFF2E /* Reflection+CoreDataClass.swift */,
+				91815B5B250174EF00DEFF2E /* Reflection+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,12 +172,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91ADDB3A2500B02E008CA39F /* Reflection+CoreDataProperties.swift in Sources */,
+				91815B5D250174EF00DEFF2E /* Reflection+CoreDataProperties.swift in Sources */,
 				91ADDB2724FFDF2B008CA39F /* SimpleCloudKit.xcdatamodeld in Sources */,
-				91ADDB392500B02E008CA39F /* Reflection+CoreDataClass.swift in Sources */,
+				91815B5C250174EF00DEFF2E /* Reflection+CoreDataClass.swift in Sources */,
 				91ADDB2124FFDF2B008CA39F /* ViewController.swift in Sources */,
 				91ADDB1D24FFDF2B008CA39F /* AppDelegate.swift in Sources */,
 				91ADDB1F24FFDF2B008CA39F /* SceneDelegate.swift in Sources */,
+				91815B5F25017CDB00DEFF2E /* SelfSizingTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -27,13 +27,30 @@
                                     <constraint firstAttribute="width" constant="414" id="mkn-Zr-8q7"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="1C0-JV-3ID">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" rowHeight="80" id="1C0-JV-3ID" customClass="SelfSizingTableViewCell" customModule="SimpleCloudKit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1C0-JV-3ID" id="Wpe-pb-N8v">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dd" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjs-CE-Snw">
+                                                    <rect key="frame" x="20" y="11" width="374" height="58"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rjs-CE-Snw" firstAttribute="leading" secondItem="Wpe-pb-N8v" secondAttribute="leading" constant="20" id="LCV-GT-s1G"/>
+                                                <constraint firstItem="rjs-CE-Snw" firstAttribute="bottom" secondItem="Wpe-pb-N8v" secondAttribute="bottomMargin" id="MEz-Hz-2im"/>
+                                                <constraint firstItem="rjs-CE-Snw" firstAttribute="top" secondItem="Wpe-pb-N8v" secondAttribute="topMargin" id="gmU-vg-D1Y"/>
+                                                <constraint firstAttribute="trailing" secondItem="rjs-CE-Snw" secondAttribute="trailing" constant="20" id="qVa-Cg-jeo"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellLabel" destination="rjs-CE-Snw" id="bA5-4V-hTH"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -78,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="166.66666666666669" y="-25.446428571428569"/>
         </scene>
     </scenes>
 </document>

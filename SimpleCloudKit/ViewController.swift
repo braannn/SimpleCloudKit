@@ -23,6 +23,9 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
+//        tableView.rowHeight = UITableView.automaticDimension
+//        tableView.estimatedRowHeight = 300
+        
         fetchReflection()
     }
 
@@ -73,13 +76,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell") as! SelfSizingTableViewCell
+//        cell.cellLabel.text = dataSource[indexPath.row]
     
         let reflect = self.items![indexPath.row]
     
-        cell?.textLabel?.text = reflect.learned
+        cell.cellLabel?.text = reflect.learned
     
-        return cell!
+        return cell
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {

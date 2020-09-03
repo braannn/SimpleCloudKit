@@ -2,7 +2,7 @@
 //  Reflection+CoreDataClass.swift
 //  SimpleCloudKit
 //
-//  Created by Muhammad Syabran on 03/09/20.
+//  Created by Muhammad Syabran on 04/09/20.
 //  Copyright © 2020 ADA. All rights reserved.
 //
 //
